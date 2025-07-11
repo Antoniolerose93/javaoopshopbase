@@ -6,19 +6,16 @@ public class App {
 
         prodotti prodotti1 = new prodotti();
         prodotti1.nome = "maglietta";
-        prodotti1.prezzo = 10;
+        prodotti1.descrizione ="T-shirt";
+        prodotti1.prezzo = 20;
         prodotti1.iva = 0.22;
+        System.out.println("Il codice prodotto è = " + prodotti1.codice);
+        System.out.println("Il prezzo base è = " + prodotti1.prezzobase());
+        System.out.println("Il prezzo ivato è = " + prodotti1.prezzoivato());
+        System.out.println(prodotti1.nomeCodice());
+        System.out.println(String.format("Il prezzo con iva (formattato) è %.2f", prodotti1.prezzoivato()));
 
-        prodotti1.prezzobaseprodotti();
-        prodotti1.prezzoprodottiivato();
-
-        prodotti prodotti2 = new prodotti();
-        prodotti2.nome = "pantalone";
-        prodotti2.prezzo = 30;
-        prodotti2.iva = 0.22;
-
-        prodotti2.prezzobaseprodotti();
-        prodotti2.prezzoprodottiivato();
+        
 
     }
 }
